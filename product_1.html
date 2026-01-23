@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Lingering Set</title>
     <!-- Favicon -->
-     <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="shortcut icon" href="" type="image/x-icon">
     <!-- CDN-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Aos CDN -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- |||||| -->
 </head>
 
 <body>
     <!--Start NAVBAR -->
     <div data-aos="fade-down">
-        <div class="navbar flex items-center bg-base-100 m-auto my-[20px] max-w-7xl gap-[100px]">
+        <div class="navbar flex flex-col lg:flex-row bg-base-100 m-auto my-[20px] max-w-7xl gap-8 lg:gap-[100px]">
             <!-- Logo -->
             <div class="flex-none">
-                <a class="btn shadow-none bg-base-100 border-none mt-4" href="index.html">
-                    <img class="w-72 h-42" src="resources/images/6.png" alt="">
+                <a class="btn shadow-none bg-base-100 border-none mt-4" href="/index.html">
+                    <img class="w-72 h-42" src="/resources/images/6.png" alt="">
                     <!-- <h1 class="text-5xl">LUSCIOUSS</h1> -->
                 </a>
             </div>
@@ -36,7 +37,7 @@
                 </div>
                 <!-- Profile Menu -->
                 <div class="dropdown dropdown-end">
-                    <a href="quick_slide.html" class="hover:text-pink-500 duration-300">
+                    <a href="/product_1.html" class="hover:text-pink-500 duration-300">
                         <div tabindex="0" role="button" class="avatar">
                             <div class="">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -61,7 +62,7 @@
                 </div>
                 <!-- Notification Menu -->
                 <div class="mt-2">
-                    <a href="quick_slide.html" class="hover:text-pink-500 duration-300">
+                    <a href="/product_1.html" class="hover:text-pink-500 duration-300">
                         <div class="indicator">
                             <svg xmlns="http://www.w3.org/2000/svg" class="size-8" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
@@ -74,7 +75,7 @@
                 </div>
                 <!-- Shopping Cart Menu -->
                 <div>
-                    <a href="quick_slide.html" class="hover:text-pink-500 duration-300">
+                    <a href="product_1.html" class="hover:text-pink-500 duration-300">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-8">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -86,8 +87,8 @@
         </div>
         <!-- Menu Section -->
         <div class="m-auto my-[20px] max-w-7xl mt-12 mb-8">
-            <div class="flex list-none justify-around text-xl font-bold">
-                <a class="group" href="index.html">
+            <div class="flex list-none justify-around lg:text-xl lg:font-bold">
+                <a class="group" href="/index.html">
                     Home
                     <div class="bg-pink-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
@@ -95,11 +96,11 @@
                     Features
                     <div class="bg-pink-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
-                <a class="group" href="https://www.lovehoney.com/">
+                <a class="group" href="/product_1.html">
                     Products
                     <div class="bg-pink-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
-                <a class="group" href="https://fleurdumal.com/">
+                <a class="group" href="/product_1.html">
                     Shop
                     <div class="bg-pink-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
@@ -121,28 +122,40 @@
     <!--End NAVBAR -->
 
     <!-- Start Products Details -->
-    <div class="bg-base-100 py-8 m-auto my-8 max-w-7xl">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row -mx-4">
-                <div class="md:flex-1 px-4">
-                    <div class="h-[460px] rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
-                        <img class="w-full h-full object-cover" src="resources/images/Categories/1st_cat_product_1.webp"
-                            alt="Product Image">
+    <div class="bg-base-100 py-8 m-auto my-8 max-w-7xl sm:p-6 md:p-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between">
+                <div data-aos="fade-right" class="flex-1 gap-8">
+                    <div class="flex flex-row gap-4 mb-5">
+                        <div class="flex flex-col gap-3 w-16 max-sm:w-14 shrink-0 mr-4">
+                            <img src="/resources/images/NewArrivals/devon.webp" alt="Product1"
+                                class="aspect-[64/85] object-cover object-top w-full cursor-pointer border-b-2 border-black" />
+                            <img src="/resources/images/Products_1.png" alt="Product2"
+                                class="aspect-[64/85] object-cover object-top w-full cursor-pointer border-b-2 border-transparent" />
+                            <img src="/resources/images/Products_2.png" alt="Product3"
+                                class="aspect-[64/85] object-cover object-top w-full cursor-pointer border-b-2 border-transparent" />
+                            <img src="/resources/images/Products_3.png" alt="Product4"
+                                class="aspect-[64/85] object-cover object-top w-full cursor-pointer border-b-2 border-transparent" />
+                        </div>
+                        <div class="h-[450px] w-full rounded-lg bg-gray-300 dark:bg-gray-700 mb-4">
+                            <img class="w-full h-full object-fit"
+                                src="/resources/images/Categories/1st_cat_product_1.webp" alt="Product Image">
+                        </div>
                     </div>
-                    <div class="flex -mx-2 mb-4">
-                        <div class="w-1/2 px-2">
+                    <div class="flex mb-4  gap-4">
+                        <div class="w-1/2">
                             <button
                                 class="w-full bg-base-100 outline outline-pink-500 text-black py-2 px-4 rounded-full font-bold hover:text-white hover:bg-pink-500">Add
                                 to Cart</button>
                         </div>
-                        <div class="w-1/2 px-2">
+                        <div class="w-1/2">
                             <button
                                 class="w-full bg-white-100 outline outline-pink-500 text-black py-2 px-4 rounded-full font-bold hover:text-white hover:bg-pink-500">Add
                                 to Wishlist</button>
                         </div>
                     </div>
                 </div>
-                <div class="md:flex-1 px-4">
+                <div data-aos="fade-left" class="md:flex-1 px-4 ml-4">
                     <h2 class="text-2xl font-bold text-black mb-2">Lingering Set</h2>
                     <p class="text-black mb-4">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed
@@ -210,12 +223,12 @@
     <!-- End Products Details -->
 
     <!-- Start Secret Delivery -->
-    <div class="sectrect-delevery flex justify-between m-auto my-8 max-w-7xl">
+    <div class="sectrect-delevery lg:flex justify-between m-auto mb-24 max-w-7xl sm:p-6 md:p-8">
         <!-- 1st section -->
         <div data-aos="fade-up">
             <div class="flex-col">
                 <div class="flex items-center justify-center">
-                    <img class="w-40" src="resources/images/Happy_Client_Icon.svg" alt="">
+                    <img class="w-40" src="/resources/images/Happy_Client_Icon.svg" alt="">
                 </div>
                 <div class="-mt-12">
                     <p class="mb-2 text-lg font-extrabold text-center text-black">
@@ -230,10 +243,10 @@
             </div>
         </div>
         <!-- 2nd section -->
-        <div data-aos="fade-up" data-aos-delay="800">
+        <div data-aos="fade-up" data-aos-delay="300">
             <div class="flex-col mt-8">
                 <div class="flex items-center justify-center">
-                    <img class="w-[80px]" src="resources/images/Dd_icon.svg" alt="">
+                    <img class="w-[80px]" src="/resources/images/Dd_icon.svg" alt="">
                 </div>
                 <div class="">
                     <p class="mb-2 text-lg font-extrabold text-center text-black">
@@ -248,10 +261,10 @@
             </div>
         </div>
         <!-- 3rd section -->
-        <div data-aos="fade-up" data-aos-delay="1200">
+        <div data-aos="fade-up" data-aos-delay="500">
             <div class="flex-col mt-6">
                 <div class="flex items-center justify-center">
-                    <img class="w-[125px]" src="resources/images/Size_icon.png" alt="">
+                    <img class="w-[125px]" src="/resources/images/Size_icon.png" alt="">
                 </div>
                 <div class="">
                     <p class="mb-2 text-lg font-extrabold text-center text-black">
@@ -268,12 +281,349 @@
     </div>
     <!-- End Secret Delivery -->
 
+    <!--Start Product Reviews -->
+    <div class="max-w-7xl m-auto my-8 py-8 p-6 md:p-8">
+        <!-- Overall Reviews -->
+        <div class="">
+            <h3 class="text-2xl font-bold text-slate-900 mb-4">Customer reviews</h3>
+            <p class="text-slate-600 text-[15px]">See what our customers have to say! Real feedback from real
+                users
+                sharing their experiences, thoughts, and satisfaction with our products and services.</p>
+        </div>
+        <!-- Ratings -->
+        <div class="flex justify-between max-sm:flex-col p-6 gap-6 mt-12">
+            <div class="max-w-sm w-full">
+                <h3 class="text-slate-900 font-semibold text-4xl">5.0</h3>
+                <div class="mt-2">
+                    <div class="flex items-center gap-1 text-yellow-400">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                    </div>
+                    <p class="mt-4 text-slate-600 text-sm">All reviews (5,456,852)</p>
+                </div>
+
+                <div class="space-y-1 mt-6">
+                    <div class="flex items-center">
+                        <div class="min-w-9">
+                            <p class="text-sm text-slate-900 font-medium">5.0</p>
+                        </div>
+                        <div class="bg-gray-300 rounded w-full h-3">
+                            <div class="w-2/3 h-full rounded bg-[#facc15]"></div>
+                        </div>
+                        <div class="min-w-14">
+                            <p class="text-sm text-slate-900 font-medium ml-4">66%</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="min-w-9">
+                            <p class="text-sm text-slate-900 font-medium">4.0</p>
+                        </div>
+                        <div class="bg-gray-300 rounded w-full h-3">
+                            <div class="w-1/3 h-full rounded bg-[#facc15]"></div>
+                        </div>
+                        <div class="min-w-14">
+                            <p class="text-sm text-slate-900 font-medium ml-4">33%</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="min-w-9">
+                            <p class="text-sm text-slate-900 font-medium">3.0</p>
+                        </div>
+                        <div class="bg-gray-300 rounded w-full h-3">
+                            <div class="w-1/6 h-full rounded bg-[#facc15]"></div>
+                        </div>
+                        <div class="min-w-14">
+                            <p class="text-sm text-slate-900 font-medium ml-4">16%</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="min-w-9">
+                            <p class="text-sm text-slate-900 font-medium">2.0</p>
+                        </div>
+                        <div class="bg-gray-300 rounded w-full h-3">
+                            <div class="w-1/12 h-full rounded bg-[#facc15]"></div>
+                        </div>
+                        <div class="min-w-14">
+                            <p class="text-sm text-slate-900 font-medium ml-4">8%</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center">
+                        <div class="min-w-9">
+                            <p class="text-sm text-slate-900 font-medium">1.0</p>
+                        </div>
+                        <div class="bg-gray-300 rounded w-full h-3">
+                            <div class="w-[6%] h-full rounded bg-[#facc15]"></div>
+                        </div>
+                        <div class="min-w-14">
+                            <p class="text-sm text-slate-900 font-medium ml-4">6%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Review This Products -->
+            <div class="">
+                <h3 class="text-slate-900 text-xl font-semibold">Review this product</h3>
+                <div class="flex items-center gap-4 mt-4">
+                    <button type="button"
+                        class="cursor-pointer shrink-0 border w-9 h-9 rounded-sm flex items-center justify-center text-slate-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 511.987 511">
+                            <path
+                                d="M114.594 491.14c-5.61 0-11.18-1.75-15.934-5.187a27.223 27.223 0 0 1-10.582-28.094l32.938-145.09L9.312 214.81a27.188 27.188 0 0 1-7.976-28.907 27.208 27.208 0 0 1 23.402-18.71l147.797-13.419L230.97 17.027C235.277 6.98 245.089.492 255.992.492s20.715 6.488 25.024 16.512l58.433 136.77 147.774 13.417c10.882.98 20.054 8.344 23.425 18.711 3.372 10.368.254 21.739-7.957 28.907L390.988 312.75l32.938 145.086c2.414 10.668-1.727 21.7-10.578 28.098-8.832 6.398-20.61 6.89-29.91 1.3l-127.446-76.16-127.445 76.203c-4.309 2.559-9.11 3.864-13.953 3.864zm141.398-112.874c4.844 0 9.64 1.3 13.953 3.859l120.278 71.938-31.086-136.942a27.21 27.21 0 0 1 8.62-26.516l105.473-92.5-139.543-12.671a27.18 27.18 0 0 1-22.613-16.493L255.992 39.895 200.844 168.96c-3.883 9.195-12.524 15.512-22.547 16.43L38.734 198.062l105.47 92.5c7.554 6.614 10.858 16.77 8.62 26.54l-31.062 136.937 120.277-71.914c4.309-2.559 9.11-3.86 13.953-3.86zm-84.586-221.848s0 .023-.023.043zm169.13-.063.023.043c0-.023 0-.023-.024-.043zm0 0"
+                                data-original="#000000" />
+                        </svg>
+                    </button>
+                    <button type="button"
+                        class="cursor-pointer shrink-0 border w-9 h-9 rounded-sm flex items-center justify-center text-slate-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 511.987 511">
+                            <path
+                                d="M114.594 491.14c-5.61 0-11.18-1.75-15.934-5.187a27.223 27.223 0 0 1-10.582-28.094l32.938-145.09L9.312 214.81a27.188 27.188 0 0 1-7.976-28.907 27.208 27.208 0 0 1 23.402-18.71l147.797-13.419L230.97 17.027C235.277 6.98 245.089.492 255.992.492s20.715 6.488 25.024 16.512l58.433 136.77 147.774 13.417c10.882.98 20.054 8.344 23.425 18.711 3.372 10.368.254 21.739-7.957 28.907L390.988 312.75l32.938 145.086c2.414 10.668-1.727 21.7-10.578 28.098-8.832 6.398-20.61 6.89-29.91 1.3l-127.446-76.16-127.445 76.203c-4.309 2.559-9.11 3.864-13.953 3.864zm141.398-112.874c4.844 0 9.64 1.3 13.953 3.859l120.278 71.938-31.086-136.942a27.21 27.21 0 0 1 8.62-26.516l105.473-92.5-139.543-12.671a27.18 27.18 0 0 1-22.613-16.493L255.992 39.895 200.844 168.96c-3.883 9.195-12.524 15.512-22.547 16.43L38.734 198.062l105.47 92.5c7.554 6.614 10.858 16.77 8.62 26.54l-31.062 136.937 120.277-71.914c4.309-2.559 9.11-3.86 13.953-3.86zm-84.586-221.848s0 .023-.023.043zm169.13-.063.023.043c0-.023 0-.023-.024-.043zm0 0"
+                                data-original="#000000" />
+                        </svg>
+                    </button>
+                    <button type="button"
+                        class="cursor-pointer shrink-0 border w-9 h-9 rounded-sm flex items-center justify-center text-slate-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 511.987 511">
+                            <path
+                                d="M114.594 491.14c-5.61 0-11.18-1.75-15.934-5.187a27.223 27.223 0 0 1-10.582-28.094l32.938-145.09L9.312 214.81a27.188 27.188 0 0 1-7.976-28.907 27.208 27.208 0 0 1 23.402-18.71l147.797-13.419L230.97 17.027C235.277 6.98 245.089.492 255.992.492s20.715 6.488 25.024 16.512l58.433 136.77 147.774 13.417c10.882.98 20.054 8.344 23.425 18.711 3.372 10.368.254 21.739-7.957 28.907L390.988 312.75l32.938 145.086c2.414 10.668-1.727 21.7-10.578 28.098-8.832 6.398-20.61 6.89-29.91 1.3l-127.446-76.16-127.445 76.203c-4.309 2.559-9.11 3.864-13.953 3.864zm141.398-112.874c4.844 0 9.64 1.3 13.953 3.859l120.278 71.938-31.086-136.942a27.21 27.21 0 0 1 8.62-26.516l105.473-92.5-139.543-12.671a27.18 27.18 0 0 1-22.613-16.493L255.992 39.895 200.844 168.96c-3.883 9.195-12.524 15.512-22.547 16.43L38.734 198.062l105.47 92.5c7.554 6.614 10.858 16.77 8.62 26.54l-31.062 136.937 120.277-71.914c4.309-2.559 9.11-3.86 13.953-3.86zm-84.586-221.848s0 .023-.023.043zm169.13-.063.023.043c0-.023 0-.023-.024-.043zm0 0"
+                                data-original="#000000" />
+                        </svg>
+                    </button>
+                    <button type="button"
+                        class="cursor-pointer shrink-0 border w-9 h-9 rounded-sm flex items-center justify-center text-slate-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 511.987 511">
+                            <path
+                                d="M114.594 491.14c-5.61 0-11.18-1.75-15.934-5.187a27.223 27.223 0 0 1-10.582-28.094l32.938-145.09L9.312 214.81a27.188 27.188 0 0 1-7.976-28.907 27.208 27.208 0 0 1 23.402-18.71l147.797-13.419L230.97 17.027C235.277 6.98 245.089.492 255.992.492s20.715 6.488 25.024 16.512l58.433 136.77 147.774 13.417c10.882.98 20.054 8.344 23.425 18.711 3.372 10.368.254 21.739-7.957 28.907L390.988 312.75l32.938 145.086c2.414 10.668-1.727 21.7-10.578 28.098-8.832 6.398-20.61 6.89-29.91 1.3l-127.446-76.16-127.445 76.203c-4.309 2.559-9.11 3.864-13.953 3.864zm141.398-112.874c4.844 0 9.64 1.3 13.953 3.859l120.278 71.938-31.086-136.942a27.21 27.21 0 0 1 8.62-26.516l105.473-92.5-139.543-12.671a27.18 27.18 0 0 1-22.613-16.493L255.992 39.895 200.844 168.96c-3.883 9.195-12.524 15.512-22.547 16.43L38.734 198.062l105.47 92.5c7.554 6.614 10.858 16.77 8.62 26.54l-31.062 136.937 120.277-71.914c4.309-2.559 9.11-3.86 13.953-3.86zm-84.586-221.848s0 .023-.023.043zm169.13-.063.023.043c0-.023 0-.023-.024-.043zm0 0"
+                                data-original="#000000" />
+                        </svg>
+                    </button>
+                    <button type="button"
+                        class="cursor-pointer shrink-0 border w-9 h-9 rounded-sm flex items-center justify-center text-slate-900">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 fill-current" viewBox="0 0 511.987 511">
+                            <path
+                                d="M114.594 491.14c-5.61 0-11.18-1.75-15.934-5.187a27.223 27.223 0 0 1-10.582-28.094l32.938-145.09L9.312 214.81a27.188 27.188 0 0 1-7.976-28.907 27.208 27.208 0 0 1 23.402-18.71l147.797-13.419L230.97 17.027C235.277 6.98 245.089.492 255.992.492s20.715 6.488 25.024 16.512l58.433 136.77 147.774 13.417c10.882.98 20.054 8.344 23.425 18.711 3.372 10.368.254 21.739-7.957 28.907L390.988 312.75l32.938 145.086c2.414 10.668-1.727 21.7-10.578 28.098-8.832 6.398-20.61 6.89-29.91 1.3l-127.446-76.16-127.445 76.203c-4.309 2.559-9.11 3.864-13.953 3.864zm141.398-112.874c4.844 0 9.64 1.3 13.953 3.859l120.278 71.938-31.086-136.942a27.21 27.21 0 0 1 8.62-26.516l105.473-92.5-139.543-12.671a27.18 27.18 0 0 1-22.613-16.493L255.992 39.895 200.844 168.96c-3.883 9.195-12.524 15.512-22.547 16.43L38.734 198.062l105.47 92.5c7.554 6.614 10.858 16.77 8.62 26.54l-31.062 136.937 120.277-71.914c4.309-2.559 9.11-3.86 13.953-3.86zm-84.586-221.848s0 .023-.023.043zm169.13-.063.023.043c0-.023 0-.023-.024-.043zm0 0"
+                                data-original="#000000" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Individual Customer Reviews -->
+        <div class="divide-y divide-gray-300 mt-6 p-6">
+            <!-- 1st Customer -->
+            <div class="py-6">
+                <div class="flex items-center gap-4">
+                    <div class="shrink-0">
+                        <img src="/resources/images/customer_profile.png"
+                            class="object-cover rounded-full w-12 h-12 border-2 border-gray-400" alt="customer-img-1" />
+                    </div>
+                    <div>
+                        <p class="text-[15px] text-slate-900 font-semibold">Emily S.</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <span class="w-4 h-4 flex items-center justify-center rounded-full bg-green-600/20">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 fill-green-700"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.225 20.656a1.206 1.206 0 0 1-1.71 0L.683 13.823a1.815 1.815 0 0 1 0-2.566l.855-.856a1.815 1.815 0 0 1 2.567 0l4.265 4.266L19.895 3.14a1.815 1.815 0 0 1 2.567 0l.855.856a1.815 1.815 0 0 1 0 2.566z" />
+                                </svg>
+                            </span>
+                            <p class="text-slate-600 text-xs">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="text-slate-900 text-base font-semibold">Quick and Easy Experience</h6>
+                    <div class="flex items-center space-x-0.5 text-yellow-400 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <p class="text-slate-600 text-sm !ml-2">2 days ago</p>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-slate-600 text-[15px] leading-relaxed">Everything was seamless. Ordering
+                            was
+                            simple and the response time was super fast. Highly recommend to anyone looking for
+                            convenience and speed.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2nd Customer -->
+            <div class="py-6">
+                <div class="flex items-center gap-4">
+                    <div class="shrink-0">
+                        <img src="https://readymadeui.com/team-3.webp"
+                            class="object-cover rounded-full w-12 h-12 border-2 border-gray-400" alt="customer-img-2" />
+                    </div>
+                    <div>
+                        <p class="text-[15px] text-slate-900 font-semibold">Linda Winston</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <span class="w-4 h-4 flex items-center justify-center rounded-full bg-green-600/20">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 fill-green-700"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.225 20.656a1.206 1.206 0 0 1-1.71 0L.683 13.823a1.815 1.815 0 0 1 0-2.566l.855-.856a1.815 1.815 0 0 1 2.567 0l4.265 4.266L19.895 3.14a1.815 1.815 0 0 1 2.567 0l.855.856a1.815 1.815 0 0 1 0 2.566z" />
+                                </svg>
+                            </span>
+                            <p class="text-slate-600 text-xs">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="text-slate-900 text-base font-semibold">Fantastic Support</h6>
+                    <div class="flex items-center space-x-0.5 text-yellow-400 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <p class="text-slate-600 text-sm !ml-2">3 days ago</p>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-slate-600 text-[15px] leading-relaxed">Had a few questions before
+                            ordering
+                            and
+                            the customer service team was amazing—super responsive and knowledgeable. It really
+                            made
+                            a
+                            difference!</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 3rd Customer -->
+            <div class="py-6">
+                <div class="flex items-center gap-4">
+                    <div class="shrink-0">
+                        <img src="https://readymadeui.com/team-4.webp"
+                            class="object-cover rounded-full w-12 h-12 border-2 border-gray-400" alt="customer-img-3" />
+                    </div>
+                    <div>
+                        <p class="text-[15px] text-slate-900 font-semibold">Priya Singh</p>
+                        <div class="flex items-center gap-2 mt-2">
+                            <span class="w-4 h-4 flex items-center justify-center rounded-full bg-green-600/20">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-2 h-2 fill-green-700"
+                                    viewBox="0 0 24 24">
+                                    <path
+                                        d="M9.225 20.656a1.206 1.206 0 0 1-1.71 0L.683 13.823a1.815 1.815 0 0 1 0-2.566l.855-.856a1.815 1.815 0 0 1 2.567 0l4.265 4.266L19.895 3.14a1.815 1.815 0 0 1 2.567 0l.855.856a1.815 1.815 0 0 1 0 2.566z" />
+                                </svg>
+                            </span>
+                            <p class="text-slate-600 text-xs">Verified Buyer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4">
+                    <h6 class="text-slate-900 text-base font-semibold">Exceeded Expectations</h6>
+                    <div class="flex items-center space-x-0.5 text-yellow-400 mt-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-[18px] h-[18px] fill-current"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.42L6.25 21.54c-.29.2-.66-.09-.56-.43l2.14-6.74L2.08 10.15c-.26-.2-.13-.6.2-.62l7.07-.05L11.62 2.66c.1-.32.56-.32.66 0l2.24 6.82 7.07.05c.33.01.46.42.2.62l-5.75 4.22 2.14 6.74c.1.34-.27.63-.56.43L12 17.42z" />
+                        </svg>
+                        <p class="text-slate-600 text-sm !ml-2">4 days ago</p>
+                    </div>
+                    <div class="mt-4">
+                        <p class="text-slate-600 text-[15px] leading-relaxed">From start to finish, I felt taken
+                            care
+                            of. The ordering process was smooth and the delivery was right on time. Would
+                            definitely
+                            use
+                            this service again.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--End Product Reviews -->
+
     <!--Start footer -->
     <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content mt-24 p-10">
         <aside>
             <!-- <h1 class="text-5xl text-White">LUSCIOUS</h1> -->
-            <a href="index.html">
-                <img class="w-40" src="resources/images/logo.png" alt="">
+            <a href="/index.html">
+                <img class="w-40" src="/resources/images/logo.png" alt="">
             </a>
             <p>
                 ACME Industries Ltd.
@@ -360,11 +710,17 @@
         </nav>
     </footer>
     <!--End footer -->
+
     <!-- AOS Js CDN -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 2000 });
+        AOS.init({ duration: 1000 });
     </script>
+    <!-- FlyonUI JS (must come before your custom JS) -->
+    <script src="https://cdn.jsdelivr.net/npm/flyonui@latest/dist/flyonui.min.js"></script>
+
+    <!-- Your custom carousel JS -->
+    <script src="carousel.js"></script>
 </body>
 
 </html>

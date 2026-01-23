@@ -7,10 +7,10 @@
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>LUSCIOUSS</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="favicon_io/favicon-96x96.png" sizes="96x96" />
-     <!-- <link rel="icon" href="resources/images/LOGO B.png" type="image/png">       -->
+    <link rel="icon" type="image/png" href="/favicon_io/favicon-96x96.png" sizes="96x96" />
+    <!-- <link rel="icon" href="resources/images/LOGO B.png" type="image/png">       -->
     <!-- <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"> -->
-     <!-- <link class="w-52 h-52" rel="shortcut icon" href="/resources/images/favicon.ico.png" type="image/x-icon"> -->
+    <!-- <link class="w-52 h-52" rel="shortcut icon" href="/resources/images/favicon.ico.png" type="image/x-icon"> -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <!-- Aos CDN -->
@@ -21,11 +21,11 @@
 <body>
     <!--Start NAVBAR -->
     <div data-aos="fade-down">
-        <div class="navbar flex items-center bg-base-100 m-auto my-[20px] max-w-7xl gap-[100px]">
+        <div class="navbar flex flex-col lg:flex-row bg-base-100 m-auto my-[20px] max-w-7xl gap-8 lg:gap-[100px]">
             <!-- Logo -->
             <div class="flex-none">
-                <a class="btn shadow-none bg-base-100 border-none mt-4" href="index.html">
-                    <img class="w-72 h-42" src="resources/images/6.png" alt="">
+                <a class="btn shadow-none bg-base-100 border-none mt-4" href="/index.html">
+                    <img class="w-72 h-32" src="/resources/images/6.png" alt=""> 
                     <!-- <h1 class="text-5xl">LUSCIOUSS</h1> -->
                 </a>
             </div>
@@ -87,8 +87,8 @@
             </div>
         </div>
         <!-- Menu Section -->
-        <div class="m-auto my-[20px] max-w-7xl mt-12 mb-8">
-            <div class="flex list-none justify-around text-xl font-bold">
+        <div class="m-auto my-[20px] max-w-7xl mt-6 mb-4">
+            <div class="flex list-none justify-around lg:text-xl lg:font-bold">
                 <a class="group" href="index.html">
                     Home
                     <div class="bg-pink-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
@@ -97,11 +97,11 @@
                     Features
                     <div class="bg-pink-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
-                <a class="group" href="https://www.lovehoney.com/">
+                <a class="group" href="/product_1.html">
                     Products
                     <div class="bg-pink-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
-                <a class="group" href="https://fleurdumal.com/">
+                <a class="group" href="/product_1.html">
                     Shop
                     <div class="bg-pink-500 h-[2px] w-0 group-hover:w-full transition-all duration-500"></div>
                 </a>
@@ -123,7 +123,7 @@
     <!--End NAVBAR -->
 
     <!--Start Hero Section -->
-    <div data-aos="fade-up">
+    <!-- <div data-aos="fade-up">
         <section class="heroSection">
             <div class="hero min-h-[600px]" style="background-image: url(/resources/images/Hero-image.jpg);">
                 <div class="hero-overlay"></div>
@@ -135,12 +135,32 @@
                             quasi. In deleniti eaque aut repudiandae et a id nisi.
                         </p>
                         <button class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
-                                href="quick_slide.html">Shop Now</a></button>
+                                href="/products_pages/product_1.html">Shop Now</a></button>
                     </div>
                 </div>
             </div>
         </section>
-    </div>
+    </div> -->
+    <header class="relative flex items-center justify-center h-[550px] mb-12 overflow-hidden bg-cover">
+        <div data-aos="fade-up" class="relative z-30 p-5 text-2xl text-white bg-opacity-50 rounded-xl">
+            <div class="hero-content text-neutral-content text-center">
+                <div class="max-w-5xl">
+                    <h1 class="mb-5 text-white text-5xl font-bold text-rotate">LUSCIOUS</h1>
+                    <p class="mb-5 text-xs lg:text-lg">
+                        Created for moments that demand closeness, that is a magnetic trail of warmth, mystery, and
+                        undeniable seduction. Designed to honor every body-shape, this fragrance transforms self-belief
+                        into luxury,desire, and an unforgettable signature.
+                    </p>
+                    <button class="btn btn-outline btn-secondary px-6 text-lg font-bold text-white hover:text-white"><a
+                            href="/product_1.html">Shop Now</a></button>
+                </div>
+            </div>
+        </div>
+        <video autoplay loop muted class="absolute z-10 w-auto min-w-full min-h-full max-w-none object-fit">
+            <source src="/resources/videos/banner_vdo.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+        </video>
+    </header>
     <!--End Hero Section -->
 
     <!-- Start New Arrivals Section -->
@@ -154,12 +174,12 @@
             </div>
         </div>
         <div data-aos="fade-right">
-            <div class="features-content flex justify-between">
+            <div class="features-content grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                 <div class="text-center">
                     <div class="feature_1 hover-3d">
                         <!-- content -->
-                        <figure class="w-60 rounded-2xl">
-                            <img src="/resources/images/Features_1.jpg" alt="Tailwind CSS 3D card" />
+                        <figure class="w-80 lg:w-60 rounded-2xl">
+                            <img src="/resources/images/NewArrivals/bridal.webp" alt="Tailwind CSS 3D card" />
                         </figure>
                         <!-- 8 empty divs needed for the 3D effect -->
                         <div></div>
@@ -172,14 +192,14 @@
                         <div></div>
                     </div>
                     <div class="text-black text-lg font-bold my-4">
-                        <h1>LSo</h1>
+                        <h1>Bridal</h1>
                     </div>
                 </div>
                 <div class="text-center">
                     <div class="feature_2 hover-3d">
                         <!-- content -->
-                        <figure class="w-60 rounded-2xl">
-                            <img src="/resources/images/Features_2.jpg" alt="Tailwind CSS 3D hover" />
+                        <figure class="w-80 lg:w-60 rounded-2xl">
+                            <img src="/resources/images/NewArrivals/brigeta.webp" alt="Tailwind CSS 3D hover" />
                         </figure>
                         <!-- 8 empty divs needed for the 3D effect -->
                         <div></div>
@@ -192,14 +212,14 @@
                         <div></div>
                     </div>
                     <div class="text-black text-lg font-bold my-4">
-                        <h1>PSo</h1>
+                        <h1>Brigeta</h1>
                     </div>
                 </div>
                 <div class="text-center">
                     <div class="feature_3 hover-3d">
                         <!-- content -->
-                        <figure class="w-60 rounded-2xl">
-                            <img class="h-[360px]" src="/resources/images/Features_4.jpg" alt="Tailwind CSS 3D hover" />
+                        <figure class="w-80 lg:w-60 rounded-2xl">
+                            <img src="/resources/images/NewArrivals/evangeline.webp" alt="Tailwind CSS 3D hover" />
                         </figure>
                         <!-- 8 empty divs needed for the 3D effect -->
                         <div></div>
@@ -212,14 +232,14 @@
                         <div></div>
                     </div>
                     <div class="text-black text-lg font-bold my-4">
-                        <h1>TSo</h1>
+                        <h1>Evangeline</h1>
                     </div>
                 </div>
                 <div class="text-center">
                     <div class="feature_4 hover-3d">
                         <!-- content -->
-                        <figure class="w-60 rounded-2xl">
-                            <img class="h-[360px]" src="/resources/images/Features_3.jpg" alt="Tailwind CSS 3D hover" />
+                        <figure class="w-80 lg:w-60 rounded-2xl">
+                            <img src="/resources/images/NewArrivals/devon.webp" alt="Tailwind CSS 3D hover" />
                         </figure>
                         <!-- 8 empty divs needed for the 3D effect -->
                         <div></div>
@@ -232,7 +252,7 @@
                         <div></div>
                     </div>
                     <div class="text-black text-lg font-bold my-4">
-                        <h1>PSo</h1>
+                        <h1>Devon</h1>
                     </div>
                 </div>
             </div>
@@ -251,99 +271,247 @@
             </div>
         </div>
         <!-- Category-main -->
-        <div class="products flex justify-between">
+        <div
+            class="products grid md:grid-rows-3 md:grid-cols-2 lg:grid-rows-2 lg:grid-cols-3 justify-center md:justify-items-center lg:justify-between gap-12">
             <!-- Products_1 -->
-            <div class="card bg-base-100 w-96 h-[580px] shadow-sm">
+            <div class="card bg-base-100 w-96 h-[700px] shadow-sm">
                 <figure>
-                    <div class="relative max-w-lg overflow-hidden bg-cover bg-no-repeat">
-                        <img class="w-full transition-transform duration-500 ease-in-out hover:scale-125"
-                            src="resources/images/Categories/1st_category.webp" alt="Shoes" />
-                    </div>
+                    <a href="product_1.html">
+                        <div class="relative max-w-lg overflow-hidden bg-cover bg-no-repeat">
+                            <img class="w-full transition-transform duration-500 ease-in-out hover:scale-125"
+                                src="resources/images/Categories/1st_category.webp" alt="Shoes" />
+                        </div>
+                    </a>
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Lingering Set</h2>
-                    <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern against
-                        your skin, while satin
-                        straps and silver hardware add that contemporary edge. </p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
-                                href="product_1.html">Shop Now</a></button>
+                <a href="product_1.html">
+                    <div class="card-body">
+                        <h2 class="card-title">Lingering Set</h2>
+                        <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern
+                            against
+                            your skin, while satin
+                            straps and silver hardware add that contemporary edge. </p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
+                                    href="/product_1.html">Shop Now</a></button>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- Products_2 -->
-            <div class="card bg-base-100 w-96 h-[580px] shadow-sm">
+            <div class="card bg-base-100 w-96 h-[700px] shadow-sm">
                 <figure>
-                    <div class="relative max-w-lg overflow-hidden bg-cover bg-no-repeat">
-                        <img class="w-full transition-transform duration-500 ease-in-out hover:scale-125"
-                            src="resources/images/Categories/2nd_category.webp" alt="Shoes" />
-                    </div>
+                    <a href="product_1.html">
+                        <div class="relative max-w-lg overflow-hidden bg-cover bg-no-repeat">
+                            <img class="w-full transition-transform duration-500 ease-in-out hover:scale-125"
+                                src="resources/images/Categories/2nd_category.webp" alt="Shoes" />
+                        </div>
+                    </a>
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Bodysuit</h2>
-                    <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern
-                        against
-                        your skin, while satin
-                        straps and silver hardware add that contemporary edge. </p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
-                                href="quick_slide.html">Shop Now</a></button>
+                <a href="product_1.html">
+                    <div class="card-body">
+                        <h2 class="card-title">Bodysuit</h2>
+                        <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern
+                            against
+                            your skin, while satin
+                            straps and silver hardware add that contemporary edge. </p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
+                                    href="/product_1.html">Shop Now</a></button>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <!-- Products_3 -->
-            <div class="card bg-base-100 w-96 h-[580px] shadow-sm">
+            <div class="card bg-base-100 w-96 h-[700px] shadow-sm">
                 <figure>
-                    <div class="relative max-w-lg overflow-hidden bg-cover bg bg-no-repeat">
-                        <img class="w-full object-top transition-transform duration-500 ease-in-out hover:scale-125"
-                            src="resources/images/Categories/3rd_category.webp" alt="Shoes" />
-                    </div>
+                    <a href="product_1.html">
+                        <div class="relative max-w-lg overflow-hidden bg-cover bg-no-repeat">
+                            <img class="w-full transition-transform duration-500 ease-in-out hover:scale-125"
+                                src="resources/images/Categories/3rd_category.webp" alt="Shoes" />
+                        </div>
+                    </a>
                 </figure>
-                <div class="card-body">
-                    <h2 class="card-title">Cosplay Set</h2>
-                    <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern against
-                        your skin, while satin
-                        straps and silver hardware add that contemporary edge. </p>
-                    <div class="card-actions justify-end">
-                        <button class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
-                                href="https://www.facebook.com/rh.tanzim.9">Shop Now</a></button>
+                <a href="product_1.html">
+                    <div class="card-body">
+                        <h2 class="card-title">Bodysuit</h2>
+                        <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern
+                            against
+                            your skin, while satin
+                            straps and silver hardware add that contemporary edge. </p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
+                                    href="/product_1.html">Shop Now</a></button>
+                        </div>
                     </div>
-                </div>
+                </a>
+            </div>
+            <!-- Products_4 -->
+            <div class="card bg-base-100 w-96 h-[700px] shadow-sm">
+                <figure>
+                    <a href="product_1.html">
+                        <div class="relative max-w-lg overflow-hidden bg-cover bg-no-repeat">
+                            <img class="w-full transition-transform duration-500 ease-in-out hover:scale-125"
+                                src="resources/images/Categories/2nd_category.webp" alt="Shoes" />
+                        </div>
+                    </a>
+                </figure>
+                <a href="product_1.html">
+                    <div class="card-body">
+                        <h2 class="card-title">Bodysuit</h2>
+                        <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern
+                            against
+                            your skin, while satin
+                            straps and silver hardware add that contemporary edge. </p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
+                                    href="product_1.html">Shop Now</a></button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Products_5 -->
+            <div class="card bg-base-100 w-96 h-[700px] shadow-sm">
+                <figure>
+                    <a href="product_1.html">
+                        <div class="relative max-w-lg overflow-hidden bg-cover bg-no-repeat">
+                            <img class="w-full transition-transform duration-500 ease-in-out hover:scale-125"
+                                src="resources/images/Categories/2nd_category.webp" alt="Shoes" />
+                        </div>
+                    </a>
+                </figure>
+                <a href="product_1.html">
+                    <div class="card-body">
+                        <h2 class="card-title">Bodysuit</h2>
+                        <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern
+                            against
+                            your skin, while satin
+                            straps and silver hardware add that contemporary edge. </p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
+                                    href="product_1.html">Shop Now</a></button>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <!-- Products_6 -->
+            <div class="card bg-base-100 w-96 h-[700px] shadow-sm">
+                <figure>
+                    <a href="product_1.html">
+                        <div class="relative max-w-lg overflow-hidden bg-cover bg-no-repeat">
+                            <img class="w-full transition-transform duration-500 ease-in-out hover:scale-125"
+                                src="resources/images/Categories/2nd_category.webp" alt="Shoes" />
+                        </div>
+                    </a>
+                </figure>
+                <a href="product_1.html">
+                    <div class="card-body">
+                        <h2 class="card-title">Bodysuit</h2>
+                        <p>Elodie is where seduction meets modern design. Rich black lace creates a stunning pattern
+                            against
+                            your skin, while satin
+                            straps and silver hardware add that contemporary edge. </p>
+                        <div class="card-actions justify-end">
+                            <button
+                                class="btn btn-outline btn-secondary text-lg font-bold text-black hover:text-white"><a
+                                    href="/product_1.html">Shop Now</a></button>
+                        </div>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
     <!-- End Category Section -->
 
-    <!-- Start New Arrivals -->
-
-    <!-- End New Arrivals -->
-
-    <!-- Xternal Section -->
-    <div class="relative">
-        <div
-            class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-200 to-blue-200">
-            <h2 class="text-4xl font-bold">The First slide</h2>
-            <p class="mt-2">Scroll Down for next slide</p>
+    <!-- Start Trending -->
+    <div class="m-auto my-16 max-w-7xl">
+        <!-- Hero content -->
+        <div class="hero-content text-neutral-content text-center my-8">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-black text-5xl font-bold">Category </h1>
+                <p class="mb-5 text-black">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem</p>
+            </div>
         </div>
-        <div
-            class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-800 to-purple-800 text-white">
-            <h2 class="text-4xl font-bold">The Second slide</h2>
-            <p class="mt-2">Scroll Down for next slide</p>
-        </div>
-        <div
-            class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-800 to-pink-800 text-white">
-            <h2 class="text-4xl font-bold">The Third slide</h2>
-            <p class="mt-2">Scroll Down</p>
-        </div>
-        <div
-            class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
-            <h2 class="text-4xl font-bold">The Fourth slide</h2>
+        <!-- Video Content -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 place-items-center gap-6">
+            <!-- Video Item 1 -->
+            <a href="/product_1.html">
+                <div class="relative group w-80 lg:w-60">
+                    <video autoplay loop muted class="w-full h-auto rounded-2xl">
+                        <source src="/resources/videos/na_11.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </a>
+            <!-- Repeat similar blocks for more videos -->
+            <!-- Add more video items as needed -->
+            <!-- Video Item 2 -->
+            <a href="/product_1.html">
+                <div class="relative group w-80 lg:w-60">
+                    <video autoplay loop muted class="w-full h-auto rounded-2xl">
+                        <source src="/resources/videos/na_2.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </a>
+            <!-- Repeat similar blocks for more videos -->
+            <!-- Video Item 3 -->
+            <a href="/product_1.html">
+                <div class="relative group w-80 lg:w-57">
+                    <video autoplay loop muted class="w-full h-auto rounded-2xl">
+                        <source src="/resources/videos/na_4.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </a>
+            <!-- Repeat similar blocks for more videos -->
+            <!-- Video Item 3 -->
+            <a href="/product_1.html">
+                <div class="relative group w-80 lg:w-60">
+                    <video autoplay loop muted class="w-full h-auto rounded-2xl">
+                        <source src="/resources/videos/na_3.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </a>
+            <!-- Repeat similar blocks for more videos -->
         </div>
     </div>
+    <!-- End Trending -->
+
+    <!-- Xternal Section -->
+    <section class="m-auto mt-20">
+        <div class="relative">
+            <div
+                class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-green-200 to-blue-200">
+                <h2 class="text-4xl font-bold">The First slide</h2>
+                <p class="mt-2">Scroll Down for next slide</p>
+            </div>
+            <div
+                class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-indigo-800 to-purple-800 text-white">
+                <h2 class="text-4xl font-bold">The Second slide</h2>
+                <p class="mt-2">Scroll Down for next slide</p>
+            </div>
+            <div
+                class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-purple-800 to-pink-800 text-white">
+                <h2 class="text-4xl font-bold">The Third slide</h2>
+                <p class="mt-2">Scroll Down</p>
+            </div>
+            <div
+                class="sticky top-0 h-screen flex flex-col items-center justify-center bg-gradient-to-b from-blue-200 to-indigo-100 text-black">
+                <h2 class="text-4xl font-bold">The Fourth slide</h2>
+            </div>
+        </div>
+    </section>
     <!-- Xternal Section -->
 
     <!--Start footer -->
-    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content mt-24 p-10">
+    <footer class="footer sm:footer-horizontal bg-neutral text-neutral-content p-10">
         <aside>
             <!-- <h1 class="text-5xl text-White">LUSCIOUS</h1> -->
             <a href="index.html">
