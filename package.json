@@ -1,0 +1,27 @@
+{
+  "name": "lusciouss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "carousel.js",
+  "scripts": {
+    "build-css": "tailwindcss -i ./public/style.css -o ./public/output.css --watch",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Its-Rafin/Lusciouss.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Its-Rafin/Lusciouss/issues"
+  },
+  "homepage": "https://github.com/Its-Rafin/Lusciouss#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^4.1.18"
+  }
+}
