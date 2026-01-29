@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+/* Set your themes here instead of the config file */
+@config "../tailwind.config.js";

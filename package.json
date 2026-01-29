@@ -2,10 +2,10 @@
   "name": "lusciouss",
   "version": "1.0.0",
   "description": "",
-  "main": "carousel.js",
+  "main": "index.js",
   "scripts": {
-    "build-css": "tailwindcss -i ./public/style.css -o ./public/output.css --watch",
-    "start": "node index.js"
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --watch",
+    "build": "npx @tailwindcss/cli -i ./src/input.css -o ./dist/output.css --minify"
   },
   "repository": {
     "type": "git",
@@ -19,9 +19,9 @@
     "url": "https://github.com/Its-Rafin/Lusciouss/issues"
   },
   "homepage": "https://github.com/Its-Rafin/Lusciouss#readme",
-  "devDependencies": {
-    "autoprefixer": "^10.4.23",
-    "postcss": "^8.5.6",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "daisyui": "^5.5.14",
     "tailwindcss": "^4.1.18"
   }
 }
