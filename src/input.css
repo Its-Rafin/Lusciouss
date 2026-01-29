@@ -3,3 +3,11 @@
 
 /* Set your themes here instead of the config file */
 @config "../tailwind.config.js";
+
+@layer base {
+
+    /* This adds a smooth fade when switching between Light and Dark mode */
+    html {
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+}

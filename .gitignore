@@ -12,3 +12,5 @@ Thumbs.db
 # --- IMPORTANT FOR LUSCIOUS ---
 # We are NOT ignoring /dist/ because GitHub Pages 
 # needs your output.css to show your styles live.
+!dist/
+!dist/output.css
