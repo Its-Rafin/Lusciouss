@@ -11,3 +11,232 @@
         transition: background-color 0.3s ease, color 0.3s ease;
     }
 }
+
+/* Card Carousel CSS */
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.sliderContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button {
+    width: 2rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    color: rgb(198, 16, 47);
+}
+
+.button--inactive {
+    opacity: 0.2;
+}
+
+.button img {
+    width: 60%;
+}
+
+/* .cards-wrapper {
+    display: flex;
+    align-items: center;
+} */
+
+.cards__container {
+    display: flex;
+    align-items: center;
+    height: 25rem;
+    perspective: 1200px;
+    /* Essential for depth */
+    transform-style: preserve-3d;
+}
+
+.box {
+    margin: -1.5rem;
+    width: 12rem;
+    height: 18rem;
+    box-shadow: 0px 0px 2rem 0px #888888;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+    flex-shrink: 0;
+    /* will-change: transform, opacity; */
+    /* backface-visibility: hidden; */
+}
+
+
+/* .box h3 {
+    position: relative;
+    display: none;
+    background-color: palevioletred;
+    background-blend-mode: overlay;
+    font-size: medium;
+    width: 100%;
+    height: auto;
+    padding: 5;
+    opacity: 0.5;
+
+}
+
+.box:hover h3 {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    transform-origin: right;
+    transition-duration: 0.6s;
+    transition-delay: 0.6s;
+} */
+
+/* .box .img-item{
+    background-size: cover;
+} */
+.box .img-items img {
+    width: 100%;
+    height: 100%;
+}
+
+/* .box .hover-gallery{
+
+} */
+
+/* Middle Box (4th child) */
+.cards__container .box:nth-child(4) {
+    transform: scale(1.5) !important;
+    z-index: 50;
+    margin: 0 20px;
+    /* Give it some breathing room */
+}
+
+.tooltip {
+    overflow: visible !important;
+    max-width: 90vw;
+}
+
+/* .tooltip-open{
+    z-index: 100 !important;
+} */
+
+.box:nth-child(2n + 3) {
+    transform: scale(1.3);
+    z-index: 30;
+}
+
+.box:nth-child(3) {
+    left: -5%;
+}
+
+.box:nth-child(5) {
+    left: 5%;
+}
+
+.box:nth-child(4n + 2) {
+    transform: scale(1.15);
+    z-index: 10;
+}
+
+.box:nth-child(2) {
+    left: -5%;
+}
+
+.box:nth-child(6) {
+    left: 5%;
+}
+
+.box:nth-child(6n + 1) {
+    transform: scale(1);
+    z-index: -1;
+}
+
+.box:nth-child(1) {
+    left: 0;
+}
+
+.box:nth-child(7) {
+    left: 0;
+}
+
+.box--hide {
+    display: none;
+}
+
+.move-out-from-left {
+    animation: moveOutLeft 0.6s ease-in-out;
+}
+
+.move-out-from-right {
+    animation: moveOutRight 0.6s ease-in-out;
+}
+
+.move-to-position7-from-left {
+    animation: moveToP7Left 0.6s ease-in-out;
+}
+
+.move-to-position6-from-left {
+    animation: moveToP6Left 0.6s ease-in-out;
+}
+
+.move-to-position5-from-left {
+    animation: moveToP5Left 0.6s ease-in-out;
+}
+
+.move-to-position4-from-left {
+    animation: moveToP4Left 0.6s ease-in-out;
+}
+
+.move-to-position3-from-left {
+    animation: moveToP3Left 0.6s ease-in-out;
+}
+
+.move-to-position2-from-left {
+    animation: moveToP2Left 0.6s ease-in-out;
+}
+
+
+.move-to-position1-from-left {
+    animation: moveToP1Left 0.6s ease-in-out;
+}
+
+.move-to-position-from-right {
+    animation: moveToP7Right 0.6s ease-in-out;
+}
+
+.move-to-position6-from-right {
+    animation: moveToP6Right 0.6s ease-in-out;
+}
+
+.move-to-position5-from-right {
+    animation: moveToP5Right 0.6s ease-in-out;
+}
+
+.move-to-position4-from-right {
+    animation: moveToP4Right 0.6s ease-in-out;
+}
+
+.move-to-position3-from-right {
+    animation: moveToP3Right 0.6s ease-in-out;
+}
+
+.move-to-position2-from-right {
+    animation: moveToP2Right 0.6s ease-in-out;
+}
+
+.move-to-position1-from-right {
+    animation: moveToP1Right 0.6s ease-in-out;
+}

@@ -277,9 +277,116 @@
     </section>
     <!-- End New Arrivals Section -->
 
+    <!-- Start Card Carousel -->
+
+    <section class="product-carousel p-10 m-auto">
+        <!-- Content -->
+        <!-- Hero-content -->
+        <div class="hero-content text-neutral-content text-center my-8">
+            <div class="max-w-md">
+                <h1 class="mb-5 text-black text-5xl font-bold">New Arrivals</h1>
+                <p class="mb-5 text-black">
+                    Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem</p>
+            </div>
+        </div>
+        <!-- carousel -->
+        <div class="sliderContainer mx-w-7xl">
+            <div class="button" onclick="shiftLeft()"><img src="https://image.ibb.co/mRsEb7/left_arrow.png" alt="">
+            </div>
+            <ul class="cards__container perspective-[800px] md:perspective-[1200px]">
+                <li class="box">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!-- Discount ToolTip -->
+                        <div class="tooltip-content tooltip-secondary">
+                            <div class="animate-bounce text-xl">50% Flat Discount!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/1st_card.webp" alt="">
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!-- Luxury ToolTip -->
+                        <div class="tooltip-content text-xsm text-bold bg-pink-500 h-8 w-48">
+                            <div class="animate-bounce">Luxury you notice instantly!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/2nd_card.webp" alt="">
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!-- Comfort ToolTip -->
+                        <div class="tooltip-content text-xsm text-bold bg-pink-500 h-8 w-48">
+                            <div class="animate-bounce">Made for your comfort!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/3rd_card.webp" alt="">
+                    </div>
+                </li>
+                <li id="focus-box" class="box">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!-- Feel ToolTip -->
+                        <div class="tooltip-content text-xsm text-bold bg-pink-500 h-8 w-48">
+                            <div class="animate-bounce">It’s about the feeling!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/4th_card.webp" alt="">
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!-- Confidence ToolTip -->
+                        <div class="tooltip-content text-xsm text-bold bg-pink-500 h-8 w-48">
+                            <div class="animate-bounce">Wear the Moment!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/5th_card.webp" alt="">
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!-- Trending Now ToolTip -->
+                        <div class="tooltip-content text-xsm text-bold bg-pink-500 h-8 w-48">
+                            <div class="animate-bounce">Trending Now!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/6th_card.webp" alt="">
+                    </div>
+                </li>
+                <li class="box">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!--BesT seLLer ToolTip -->
+                        <div class="tooltip-content text-xsm text-bold bg-pink-500 h-8 w-48">
+                            <div class="animate-bounce">Best Seller!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/7th_card.webp" alt="">
+                    </div>
+                </li>
+                <li class="box box--hide">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!-- Soft Matter ToolTip -->
+                        <div class="tooltip-content text-xsm text-bold bg-pink-500 h-8 w-48">
+                            <div class="animate-bounce">Soft where it matters most!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/8th_card.webp" alt="">
+                    </div>
+                </li>
+                <li class="box box--hide">
+                    <div class="img-items h-full w-full tooltip tooltip-bottom">
+                        <!--  Comfort First ToolTip -->
+                        <div class="tooltip-content text-bold bg-pink-500 h-8 w-48">
+                            <div class="animate-bounce">Crafted like it feels on you!</div>
+                        </div>
+                        <img src="./resources/images/carousel_images_card/9th_card.webp" alt="">
+                    </div>
+                </li>
+
+            </ul>
+            <div class="button" onclick="shiftRight()"><img src="https://image.ibb.co/dfPSw7/right_arrow.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- End Card Carousel -->
+
     <!-- Start Category Section -->
     <!-- Category-content -->
-    <section class="products m-auto my-8 max-w-7xl">
+    <section class="products m-auto my-8 mt-20 max-w-7xl">
         <div class="hero-content text-neutral-content text-center my-8">
             <div class="max-w-md">
                 <h1 class="mb-5 text-black text-5xl font-bold">Category </h1>
@@ -501,6 +608,9 @@
     </div>
     <!-- End Trending -->
 
+    <!-- Carousel Images -->
+    <!-- Carousel Images -->
+
     <!-- Xternal Section -->
     <section class="m-auto mt-20">
         <div class="relative">
@@ -624,6 +734,7 @@
     <script>
         AOS.init({ duration: 2000 });
     </script>
+
     <!-- Js link -->
     <script src="./js/main.js"></script>
 </body>
