@@ -2,9 +2,11 @@
 module.exports = {
     content: ["./*.html", "./js/**/*.js"],
     theme: {
-        extend: {},
-    },
-    daisyui: {
-        themes: ["light", "dark", "luxury", "cupcake"],
+        extend: {
+            fontFamily: {
+                header: ['"Playfair Display"', 'serif'],
+                body: ['"Inter"', 'sans-serif'],
+            },
+        },
     },
 };

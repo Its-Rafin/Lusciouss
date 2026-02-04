@@ -1,0 +1,12 @@
+{
+    "trae.chatLanguage": "en",
+    "trae.advanced": {
+        "logLevel": "info",
+        "logFileV2": true,
+        "outOfScopeProcess": false,
+        "debounceInterval": 125,
+        "proxyMode": "system",
+        "proxyUrl": "",
+        "addToChatHint": true
+    }
+}
