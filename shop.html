@@ -1,0 +1,225 @@
+<!doctype html>
+<html data-theme="dark">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop All — LUSCIOUSS</title>
+    <meta name="description" content="Shop all premium intimates by Lusciouss.">
+    <script>const t=localStorage.getItem('theme')||'dark';document.documentElement.setAttribute('data-theme',t);</script>
+    <link rel="stylesheet" href="./dist/output.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body class="font-body bg-base-100 text-base-content min-h-screen flex flex-col">
+    <!-- Floating Orbs -->
+    <div class="orb orb-1" aria-hidden="true"></div>
+    <div class="orb orb-2" aria-hidden="true"></div>
+
+    <!-- Mini-Cart Overlay -->
+    <div id="mini-cart-overlay"></div>
+    <!-- Mini-Cart Panel -->
+    <div id="mini-cart-panel" class="bg-base-100 text-base-content shadow-2xl">
+        <div class="flex items-center justify-between p-5 border-b border-current/10">
+            <h2 class="font-header text-xl font-bold">Your Cart</h2>
+            <button id="mini-cart-close" class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-current/10 transition-colors text-lg" aria-label="Close cart">✕</button>
+        </div>
+        <div id="mini-cart-items" class="flex-1 overflow-y-auto px-5 py-3"></div>
+        <div class="p-5 border-t border-current/10">
+            <div class="flex justify-between items-center mb-4">
+                <span class="font-semibold">Subtotal</span>
+                <span id="mini-cart-subtotal" class="font-bold text-lg">$0.00</span>
+            </div>
+            <a href="./cart.html" class="btn-lusciouss block text-center w-full mb-3">View Cart &amp; Checkout</a>
+            <button onclick="closeMiniCart()" class="w-full py-2 rounded-full border border-current/30 text-sm font-semibold hover:bg-current/5 transition-colors">Continue Shopping</button>
+        </div>
+    </div>
+
+    <!-- Navbar (Simplified for subpages) -->
+    <div class="navbar bg-base-100 m-auto max-w-7xl px-4 py-4 sticky top-0 z-40 shadow-sm glass-card border-x-0 border-t-0 rounded-none">
+        <div class="flex-1">
+            <a href="./index.html" class="inline-block relative w-32">
+                <img class="h-auto w-full logo-light" src="./resources/brand-logos/LUSCIOUSS LOGO Red.png" alt="Lusciouss Logo">
+                <img class="absolute inset-0 h-full w-full logo-dark" src="./resources/brand-logos/LUSCIOUSS LOGO White.png" alt="Lusciouss Logo">
+            </a>
+        </div>
+        <div class="flex-none gap-6">
+            <a href="./index.html" class="font-bold hover:text-primary transition-colors hidden sm:block">Home</a>
+            <a href="./shop.html" class="font-bold text-primary hidden sm:block">Shop</a>
+            <button id="mini-cart-btn" class="hover:text-primary duration-300 relative" aria-label="Open cart">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                </svg>
+                <span class="cart-count-badge absolute -top-2 -right-2 w-4 h-4 bg-secondary text-base-100 rounded-full text-[10px] font-bold flex items-center justify-center" style="display:none;">0</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main class="flex-1 max-w-7xl mx-auto w-full px-4 py-10 flex flex-col md:flex-row gap-8">
+        
+        <!-- Sidebar Filters -->
+        <aside id="filter-container" class="w-full md:w-64 flex-shrink-0" data-aos="fade-right">
+            <div class="glass-card p-6 sticky top-24">
+                <h3 class="font-header text-2xl mb-6">Filters</h3>
+                
+                <!-- Category Filter -->
+                <div class="mb-6">
+                    <h4 class="font-bold mb-3 border-b border-current/10 pb-2">Category</h4>
+                    <div class="flex flex-col gap-2">
+                        <label class="cursor-pointer flex items-center gap-2">
+                            <input type="checkbox" class="cat-check checkbox checkbox-primary checkbox-sm rounded" value="set">
+                            <span class="text-sm">Lingerie Sets</span>
+                        </label>
+                        <label class="cursor-pointer flex items-center gap-2">
+                            <input type="checkbox" class="cat-check checkbox checkbox-primary checkbox-sm rounded" value="bodysuit">
+                            <span class="text-sm">Bodysuits</span>
+                        </label>
+                        <label class="cursor-pointer flex items-center gap-2">
+                            <input type="checkbox" class="cat-check checkbox checkbox-primary checkbox-sm rounded" value="bridal">
+                            <span class="text-sm">Bridal</span>
+                        </label>
+                    </div>
+                </div>
+
+                <!-- Size Filter -->
+                <div class="mb-6">
+                    <h4 class="font-bold mb-3 border-b border-current/10 pb-2">Size</h4>
+                    <div class="flex flex-wrap gap-2 size-group">
+                        <button class="size-btn text-xs" data-size="XS">XS</button>
+                        <button class="size-btn text-xs" data-size="S">S</button>
+                        <button class="size-btn text-xs" data-size="M">M</button>
+                        <button class="size-btn text-xs" data-size="L">L</button>
+                        <button class="size-btn text-xs" data-size="XL">XL</button>
+                    </div>
+                </div>
+
+                <!-- Price Filter -->
+                <div class="mb-6">
+                    <h4 class="font-bold mb-3 border-b border-current/10 pb-2">Max Price: <span id="price-range-val" class="text-primary">$200</span></h4>
+                    <input type="range" id="price-range" min="0" max="250" value="200" class="range range-primary range-xs" />
+                </div>
+            </div>
+        </aside>
+
+        <!-- Product Grid Area -->
+        <div class="flex-1 flex flex-col" data-aos="fade-up">
+            <!-- Sort & Results count -->
+            <div class="flex justify-between items-center mb-6">
+                <h1 class="font-header text-3xl">Shop All</h1>
+                <select id="sort-select" class="select select-bordered select-sm rounded-full bg-transparent">
+                    <option value="newest">Sort by: Newest</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                </select>
+            </div>
+
+            <!-- Grid -->
+            <div id="shop-product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Product 1 -->
+                <div class="shop-card product-card-shop bg-base-300" data-category="set" data-price="129.00" data-sizes="S,M,L">
+                    <a href="./product-detail.html" class="block h-[340px]">
+                        <img src="./resources/images/NewArrivals/bridal.webp" alt="Bridal Set" class="w-full h-full object-cover">
+                    </a>
+                    <div class="p-4 relative">
+                        <div class="flex justify-between items-start mb-1">
+                            <a href="./product-detail.html" class="font-header text-lg hover:text-primary transition-colors">Bridal Set</a>
+                            <span class="font-bold text-primary">$129.00</span>
+                        </div>
+                        <p class="text-xs opacity-60 mb-3">Ivory</p>
+                    </div>
+                    <div class="quick-add" onclick="addToCart('Bridal Set', 129.00, './resources/images/NewArrivals/bridal.webp', 'M', 'Ivory')">
+                        Quick Add to Cart
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="shop-card product-card-shop bg-base-300" data-category="set" data-price="99.00" data-sizes="XS,S,M,L">
+                    <a href="./product-detail.html" class="block h-[340px]">
+                        <img src="./resources/images/NewArrivals/brigeta.webp" alt="Brigeta Set" class="w-full h-full object-cover">
+                    </a>
+                    <div class="p-4 relative">
+                        <div class="flex justify-between items-start mb-1">
+                            <a href="./product-detail.html" class="font-header text-lg hover:text-primary transition-colors">Brigeta Set</a>
+                            <span class="font-bold text-primary">$99.00</span>
+                        </div>
+                        <p class="text-xs opacity-60 mb-3">Black</p>
+                    </div>
+                    <div class="quick-add" onclick="addToCart('Brigeta Set', 99.00, './resources/images/NewArrivals/brigeta.webp', 'M', 'Black')">
+                        Quick Add to Cart
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="shop-card product-card-shop bg-base-300" data-category="bodysuit" data-price="89.00" data-sizes="S,M">
+                    <a href="./product-detail.html" class="block h-[340px]">
+                        <img src="./resources/images/NewArrivals/devon.webp" alt="Devon Bodysuit" class="w-full h-full object-cover">
+                    </a>
+                    <div class="p-4 relative">
+                        <div class="flex justify-between items-start mb-1">
+                            <a href="./product-detail.html" class="font-header text-lg hover:text-primary transition-colors">Devon Bodysuit</a>
+                            <span class="font-bold text-primary">$89.00</span>
+                        </div>
+                        <p class="text-xs opacity-60 mb-3">Wine</p>
+                    </div>
+                    <div class="quick-add" onclick="addToCart('Devon Bodysuit', 89.00, './resources/images/NewArrivals/devon.webp', 'M', 'Wine')">
+                        Quick Add to Cart
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="shop-card product-card-shop bg-base-300" data-category="set" data-price="115.00" data-sizes="M,L,XL">
+                    <a href="./product-detail.html" class="block h-[340px]">
+                        <img src="./resources/images/NewArrivals/evangeline.webp" alt="Evangeline Set" class="w-full h-full object-cover">
+                    </a>
+                    <div class="p-4 relative">
+                        <div class="flex justify-between items-start mb-1">
+                            <a href="./product-detail.html" class="font-header text-lg hover:text-primary transition-colors">Evangeline Set</a>
+                            <span class="font-bold text-primary">$115.00</span>
+                        </div>
+                        <p class="text-xs opacity-60 mb-3">Dusty Rose</p>
+                    </div>
+                    <div class="quick-add" onclick="addToCart('Evangeline Set', 115.00, './resources/images/NewArrivals/evangeline.webp', 'M', 'Dusty Rose')">
+                        Quick Add to Cart
+                    </div>
+                </div>
+
+                <!-- Product 5 (Hidden initially) -->
+                <div class="shop-card initially-hidden product-card-shop bg-base-300 hidden" data-category="bodysuit" data-price="95.00" data-sizes="S,M,L">
+                    <a href="./product-detail.html" class="block h-[340px]">
+                        <img src="./resources/images/carousel_images_card/6th_card.webp" alt="Midnight Bodysuit" class="w-full h-full object-cover">
+                    </a>
+                    <div class="p-4 relative">
+                        <div class="flex justify-between items-start mb-1">
+                            <a href="./product-detail.html" class="font-header text-lg hover:text-primary transition-colors">Midnight Bodysuit</a>
+                            <span class="font-bold text-primary">$95.00</span>
+                        </div>
+                        <p class="text-xs opacity-60 mb-3">Charcoal</p>
+                    </div>
+                    <div class="quick-add" onclick="addToCart('Midnight Bodysuit', 95.00, './resources/images/carousel_images_card/6th_card.webp', 'M', 'Charcoal')">
+                        Quick Add to Cart
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Load More -->
+            <div class="text-center mt-12">
+                <button id="load-more-btn" class="btn-shimmer text-sm px-8 py-3">Load More Products</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-neutral text-neutral-content p-10 mt-auto border-t border-white/5">
+        <aside>
+            <a href="./index.html"><img class="w-32" src="./resources/images/logo.png" alt="Lusciouss Logo"></a>
+            <p class="mt-2 text-xs opacity-60">&copy; 2025 Lusciouss. All rights reserved.</p>
+        </aside>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init({ duration: 600, once: true });</script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
